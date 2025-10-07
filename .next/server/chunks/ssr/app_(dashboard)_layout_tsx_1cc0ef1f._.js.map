@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/nazirhasan/Documents/GitHub/rabhan-revamp/app/%28dashboard%29/layout.tsx"],"sourcesContent":["import type { Metadata } from 'next';\n\nexport const metadata: Metadata = {\n  title: 'Dashboard - RABHAN',\n  description: 'User dashboard for managing solar energy solutions',\n};\n\nexport default function DashboardLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return children;\n}\n"],"names":[],"mappings":";;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,gBAAgB,EACtC,QAAQ,EAGT;IACC,OAAO;AACT","debugId":null}}]
+}

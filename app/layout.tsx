@@ -1,40 +1,38 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { Providers } from '@/components/providers';
+
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Rabhan Revamp - Enterprise Application',
-    template: '%s | Rabhan Revamp',
+    default: 'RABHAN - Buy Now Pay Later for Solar Energy',
+    template: '%s | RABHAN',
   },
-  description: 'Enterprise-grade Next.js application optimized for 1M+ users',
-  keywords: ['enterprise', 'scalable', 'secure', 'high-performance'],
-  authors: [{ name: 'Rabhan Team' }],
-  creator: 'Rabhan Team',
+  description: 'Enterprise BNPL platform for solar energy solutions in Saudi Arabia. Supporting Net Zero 2060 vision.',
+  keywords: ['solar energy', 'BNPL', 'Saudi Arabia', 'renewable energy', 'financing'],
+  authors: [{ name: 'Azkashine' }],
+  creator: 'Azkashine',
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: process.env.NEXT_PUBLIC_APP_URL,
-    title: 'Rabhan Revamp',
-    description: 'Enterprise-grade Next.js application optimized for 1M+ users',
-    siteName: 'Rabhan Revamp',
+    title: 'RABHAN - Solar Energy BNPL Platform',
+    description: 'Buy Now Pay Later for solar energy solutions in Saudi Arabia',
+    siteName: 'RABHAN',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rabhan Revamp',
-    description: 'Enterprise-grade Next.js application optimized for 1M+ users',
+    title: 'RABHAN - Solar Energy BNPL',
+    description: 'Buy Now Pay Later for solar energy solutions',
   },
   robots: {
     index: true,
@@ -58,7 +56,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+    { media: '(prefers-color-scheme: dark)', color: '#42B2B1' },
   ],
   width: 'device-width',
   initialScale: 1,
@@ -72,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body className={`${poppins.variable} font-poppins antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -1,0 +1,19 @@
+<svg width="147" height="100" viewBox="0 0 147 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="147" height="100" fill="white"/>
+  
+  <!-- Sun Icon -->
+  <circle cx="40" cy="40" r="15" fill="#F0AD4E"/>
+  <path d="M40 15L40 25M40 55L40 65M15 40L25 40M55 40L65 40M22 22L28 28M52 28L58 22M22 58L28 52M52 52L58 58" 
+        stroke="#F0AD4E" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Solar Panel -->
+  <rect x="65" y="30" width="60" height="35" rx="3" fill="#42B2B1"/>
+  <line x1="65" y1="47.5" x2="125" y2="47.5" stroke="white" stroke-width="2"/>
+  <line x1="85" y1="30" x2="85" y2="65" stroke="white" stroke-width="2"/>
+  <line x1="105" y1="30" x2="105" y2="65" stroke="white" stroke-width="2"/>
+  
+  <!-- Text RABHAN -->
+  <text x="10" y="85" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#42B2B1">RABHAN</text>
+  <text x="10" y="96" font-family="Arial, sans-serif" font-size="9" fill="#007d7d">Solar Energy BNPL</text>
+</svg>
